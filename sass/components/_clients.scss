@@ -1,0 +1,49 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients__title {
+  margin: 0;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  color: $primaryTextColor;
+}
+
+.clients__list {
+  @extend %list;
+
+  display: flex;
+  gap: 30px;
+}
+
+.clients__link {
+  @extend %link;
+
+  display: flex;
+  padding: 16px 32px;
+  width: 170px;
+  height: 92px;
+
+  color: $iconPrimaryColor;
+  border: 1px solid $iconPrimaryColor;
+  border-radius: 4px;
+
+  transition-property: color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+    border-color: $accentColor;
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+}

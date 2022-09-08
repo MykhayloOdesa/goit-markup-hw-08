@@ -1,0 +1,27 @@
+.logo {
+  display: block;
+  color: $brandBlackColor;
+  text-decoration: none;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+}
+
+.logo__text {
+  color: $accentColor;
+}
+
+.header__logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+}
+
+.logo__text--inverse {
+  color: $brandWhiteColor;
+}
