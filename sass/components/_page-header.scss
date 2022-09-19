@@ -2,8 +2,32 @@
   border-bottom: 1px solid $headerBorder;
 }
 
-.header__container {
+.header__mobile {
+  @media screen and (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.button__mobile {
   display: flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.header__tablet {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .header__nav {

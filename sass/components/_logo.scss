@@ -4,8 +4,16 @@
   text-decoration: none;
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
+
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: calc(31 / 26);
+  }
 }
 
 .logo__text {
@@ -13,9 +21,14 @@
 }
 
 .header__logo {
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 93px;
+  }
 }
 
 .footer__logo {
