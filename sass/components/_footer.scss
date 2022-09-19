@@ -21,8 +21,10 @@
   margin-bottom: 60px;
 
   @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-bottom: 0;
     margin-right: 70px;
-    width: 231px;
+    min-width: 231px;
   }
 }
 
@@ -64,6 +66,7 @@
 
   @media screen and (min-width: 1200px) {
     margin-right: 93px;
+    margin-bottom: 0;
   }
 }
 
@@ -76,6 +79,12 @@
   line-height: calc(16 / 14);
   text-transform: uppercase;
   color: $brandWhiteColor;
+
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .join__list {
@@ -127,6 +136,10 @@
   color: $brandWhiteColor;
 
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .subscribe__form {
@@ -156,6 +169,10 @@
     font-size: 16px;
     line-height: calc(20 / 16);
     color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 450px;
   }
 }
 
