@@ -1,6 +1,11 @@
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio__title--visually-hidden {
@@ -21,10 +26,17 @@
 
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 8px;
 
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio__button {
@@ -104,13 +116,18 @@
 
   font-size: 18px;
   line-height: calc(28 / 18);
-  padding: 63px 24px;
+  padding: 77px 24px;
+
   margin: 0;
 
   color: $brandWhiteColor;
   background-color: rgba(33, 150, 243, 0.9);
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
+  }
 }
 
 .portfolio__description {
@@ -134,5 +151,5 @@
   margin: 0;
 
   color: $secondaryTextColor;
-  line-height: 1.88;
+  line-height: calc(30 / 16);
 }
