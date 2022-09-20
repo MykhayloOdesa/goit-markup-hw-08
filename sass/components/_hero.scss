@@ -2,6 +2,9 @@
   padding-top: 118px;
   padding-bottom: 118px;
 
+  max-width: 480px;
+  height: 400px;
+
   margin-left: auto;
   margin-right: auto;
 
@@ -13,6 +16,15 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, $heroBgColor, $heroBgColor),
+      url(../images/index/hero/hero-bg@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
 
   @media screen and (min-width: 1200px) {
     max-width: 1600px;

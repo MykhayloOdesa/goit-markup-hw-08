@@ -156,6 +156,10 @@
 .nav-list__link {
   @extend %link;
 
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: $primaryTextColor;
   font-weight: 500;
   font-size: 14px;
@@ -167,12 +171,6 @@
   &:hover,
   &:focus {
     color: $accentColor;
-  }
-
-  @media screen and (min-width: 1200px) {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
   }
 }
 
@@ -198,8 +196,20 @@
   @extend %list;
 
   display: flex;
-  gap: 30px;
   margin-left: auto;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 10px;
+
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    gap: 30px;
+    padding: 0;
+  }
 }
 
 .contact-list__link {
@@ -208,12 +218,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
+
   letter-spacing: 0.02em;
   color: $secondaryTextColor;
 
@@ -222,6 +231,14 @@
   &:hover,
   &:focus {
     color: $accentColor;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
