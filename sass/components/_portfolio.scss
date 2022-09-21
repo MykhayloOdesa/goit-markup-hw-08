@@ -82,6 +82,8 @@
 .portfolio__item {
   width: 100%;
 
+  display: flex;
+
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 30px) / 2);
   }
@@ -94,7 +96,8 @@
 .portfolio__link {
   @extend %link;
 
-  display: block;
+  display: flex;
+  flex-direction: column;
   color: inherit;
 
   transition-property: box-shadow;
@@ -151,21 +154,11 @@
 
 .portfolio__description {
   padding: 20px 24px;
-  border-left: 1px solid var(--table-border-color);
-  border-right: 1px solid var(--table-border-color);
-  border-bottom: 1px solid var(--table-border-color);
+  border-left: 1px solid $gridBorderColor;
+  border-right: 1px solid $gridBorderColor;
+  border-bottom: 1px solid $gridBorderColor;
 
-  @media screen and (min-width: 768px) {
-    &--first {
-      padding-bottom: 56px;
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    &--first {
-      padding: 20px 24px;
-    }
-  }
+  flex-grow: 1;
 }
 
 .description__title {
