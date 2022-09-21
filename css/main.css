@@ -86,7 +86,7 @@ body.modal-open {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-bottom: 302px;
+  margin-bottom: auto;
 }
 
 .menu__contacts {
@@ -736,6 +736,7 @@ body.modal-open {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -747,12 +748,6 @@ body.modal-open {
 .footer__box {
   text-align: center;
   margin-bottom: 60px;
-}
-@media screen and (min-width: 768px) {
-  .footer__box {
-    margin-right: 165px;
-    margin-left: 76px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .footer__box {
