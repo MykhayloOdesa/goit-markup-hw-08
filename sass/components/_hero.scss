@@ -12,25 +12,25 @@
   text-align: center;
 
   background-image: linear-gradient(to right, $heroBgColor, $heroBgColor),
-    url(../../images/index/hero/hero-bg-480.jpg);
+    url(../images/index/hero/hero-bg-480.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, $heroBgColor, $heroBgColor),
-      url(../../images/index/hero/hero-bg-480@2x.jpg);
+      url(../images/index/hero/hero-bg-480@2x.jpg);
   }
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
 
     background-image: linear-gradient(to right, $heroBgColor, $heroBgColor),
-      url(../../images/index/hero/hero-bg-768.jpg);
+      url(../images/index/hero/hero-bg-768.jpg);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, $heroBgColor, $heroBgColor),
-        url(../../images/index/hero/hero-bg-768@2x.jpg);
+        url(../images/index/hero/hero-bg-768@2x.jpg);
     }
   }
 
@@ -42,11 +42,11 @@
     padding-bottom: 200px;
 
     background-image: linear-gradient(to right, $heroBgColor, $heroBgColor),
-      url(../../images/index/hero/hero-bg-1200.jpg);
+      url(../images/index/hero/hero-bg-1200.jpg);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, $heroBgColor, $heroBgColor),
-        url(../../images/index/hero/hero-bg-1200@2x.jpg);
+        url(../images/index/hero/hero-bg-1200@2x.jpg);
     }
   }
 }
